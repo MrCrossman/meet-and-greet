@@ -13,7 +13,7 @@ basic.forever(function () {
     } else if (distance < 10) {
         Kitronik_Move_Motor.stop()
         Kitronik_Move_Motor.soundSiren(Kitronik_Move_Motor.OnOffSelection.On)
-        basic.showString("Excuse me!")
+        basic.showString("Pardon me!")
         basic.pause(500)
         Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Reverse, 50)
         Kitronik_Move_Motor.soundSiren(Kitronik_Move_Motor.OnOffSelection.Off)
