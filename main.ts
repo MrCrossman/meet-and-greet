@@ -11,10 +11,8 @@ basic.forever(function () {
         Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 50)
     } else if (distance < 10) {
         Kitronik_Move_Motor.stop()
-        basic.showString("Pardon me!")
         basic.pause(500)
         Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Reverse, 50)
-        basic.showString("Bye bye!")
         basic.pause(500)
         Kitronik_Move_Motor.spin(Kitronik_Move_Motor.SpinDirections.Left, 50)
         basic.pause(500)
