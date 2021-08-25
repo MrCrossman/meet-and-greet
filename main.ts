@@ -1,6 +1,6 @@
 let distance = 0
+basic.showString("Hello!")
 basic.forever(function () {
-    basic.showString("Hello!")
     distance = Kitronik_Move_Motor.measure()
     if (distance > 10) {
         Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 200)
